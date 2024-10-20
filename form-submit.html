@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!--ini urutan form 2-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #629584; font-size: 150%; ">
+    <form method="get" action="form-submit-profile-user.html">
+        <div style="text-align: center;">
+            STOLE YOUR DATA &#128523;
+        </div> <br><br>
+        <div>
+        <fieldset> <!--tag ini untuk kasih sectin macam membungkus atau membatasi garis-->
+            <legend>Preferensi Segsual</legend> <!--ini untuk judul dari section tersebut-->
+            <input type="radio" name="preferensi-segs" id="pemboy-lover" value="pemboy-lover"> <!--radio tipe buat pilih salah satu dan mirip checkbox tapi bedanya checkbox bisa pilih banyak-->
+            <label for="pemboy-lover">Penyuka femboy</label> <br>
+            <input type="radio" name="preferensi-segs" id="lurus" value="lurus">
+            <label for="lurus">lurus</label> <br>
+            <input type="radio" name="preferensi-segs" id="geh" value="geh">
+            <label for="geh">why are you geh?</label> <br>
+            <input type="radio" name="preferensi-segs" id="deadlysins" value="Bisegs">
+            <label for="deadlysins">Bisegsual</label> <br><br>
+        </fieldset>
+        </div> <br>
+        <fieldset>
+            <legend>Warna Kesukaan</legend>
+            <label for="warna">Pilih Warna</label>
+            <input type="color" name="Warna" id="warna" value="warna juga"> <br><br>
+        </fieldset> <br><br>
+        <fieldset>
+            <legend>Jika kamu suka femboy, maka sejak kapan itu terjadi?</legend>
+            <label for="wenfem">Pilih Waktu kapan kamu mulai menyukai personality femboy</label>
+            <input type="date" name="sejak kapan suka femboy" value="wenfem" id="wenfem"> <br><br>
+        </fieldset> <br><br>
+        <fieldset>
+            <legend>Pilih Hobi</legend>
+            <label for="select">boleh pilih lebih dari satu hobi dengan pencet ctrl + click pilihan hobbynya</label>
+            <select multiple id="select"> <!--tag select sama seperti radio, checkbox, intinya bisa milik tapi tampilannya bisa discroll--> <!--multiple buat pilih lebih dari satu-->
+                <optgroup label="Gaming"> <!--didalem select bisa diisi optgroup untuk mengelompokan jenis hobinya apa, lalu di dalamnya lagi akan diisi option untuk menampilkan pilihan berdasar jenis hobinya-->
+                    <option value="mobile game">mobile game</option> <!--label buat kasih semacam id(beda dengan atribut id tapi) untuk dikirim ke server dan didalam tagnya itu berupa yang ditampilkan kepada client -->
+                    <option value="pc game">pc game</option>
+                    <option value="console game">console game</option>
+                </optgroup>
+                <optgroup label="scrolling sosmed">
+                    <option value="facebook">facebook</option>
+                    <option value="instagram">instagram</option>
+                    <option value="youtube reels">youtube reels</option>
+                    <option value="reddit">reddit</option>
+                </optgroup>
+                <optgroup label="anime stuff">
+                    <option label="baca manga">baca manga</option>
+                    <option label="nonton anime">nonton anime</option>
+                    <option label="baca light novel">baca light novel</option>
+                </optgroup>
+            </select> 
+        </fieldset> <br><br><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
